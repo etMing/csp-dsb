@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "CSP DSB",
+  "version": "0.1.8",
+  "author": "physixxx",
+  "description": "Modify or remove Content-Security-Policy headers on any website. Edit directives or use no-csp to disable CSP entirely.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "CSP DSB",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/button-48-off.png"
+    }
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}

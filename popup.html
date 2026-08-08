@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <span class="logo">&#x1F6E1;&#xFE0F;</span>
+      <span class="title">CSP DSB</span>
+      <label class="switch" title="Master Switch">
+        <input type="checkbox" id="enable-toggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <!-- Status bar -->
+    <div id="status-bar" class="status-bar">Loading...</div>
+
+    <!-- Current site info (shown when on a webpage) -->
+    <div id="currentSite" class="current-site" style="display:none">
+      <div class="current-site-label">Current site:</div>
+      <code id="currentSiteUrl"></code>
+    </div>
+
+    <!-- Rules section -->
+    <div class="section-header">
+      <span class="section-title">CSP Rules</span>
+      <span id="ruleSummary" class="rule-summary">0 rules, 0 active</span>
+    </div>
+
+    <!-- Rule list (scrollable) -->
+    <div id="ruleList" class="rule-list">
+      <!-- Rules inserted here dynamically -->
+    </div>
+
+    <!-- Empty state -->
+    <div id="emptyState" class="empty-state">
+      <div class="empty-icon">&#x1F6E1;</div>
+      <p>No rules yet. Add a rule to start modifying CSP headers.</p>
+    </div>
+
+    <!-- Add Rule button -->
+    <div class="add-rule-section">
+      <button id="addRuleBtn" class="btn btn-primary btn-full">
+        + Add Rule
+      </button>
+    </div>
+
+    <!-- Replace warning -->
+    <div class="replace-warning-banner">
+      <span class="warn-icon">&#x26A0;&#xFE0F;</span>
+      <span>CSP rules <strong>REPLACE</strong> the entire Content-Security-Policy response header. Include the full policy to avoid breaking websites.</span>
+    </div>
+
+    <!-- Bottom actions -->
+    <div class="bottom-actions">
+      <button id="exportBtn" class="btn btn-ghost btn-sm">Export Rules</button>
+      <button id="importBtn" class="btn btn-ghost btn-sm">Import Rules</button>
+    </div>
+
+  </div>
+
+  <script src="util.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
