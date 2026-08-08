@@ -1,5 +1,5 @@
 # csp-dsb
-Modify or remove Content-Security-Policy headers on any website. Edit directives or use no-csp to disable CSP entirely.
+A Chrome browser extension that lets you modify or remove Content-Security-Policy headers on any website. Edit directives or use no-csp to disable CSP entirely.
 
 ---
 
@@ -36,7 +36,8 @@ Back up your rule set to a JSON file or share rules across devices.
 
 ## How to Use
 
-1. Click the **CSP DSB** icon in your browser toolbar
+1. Install the extension from the Chrome Web Store
+2. Click the **CSP DSB** icon in your browser toolbar
 2. Click **"+ Add Rule"** — the current site's URL and CSP are auto-filled
 3. Edit directives in the structured view, or click **"Edit raw CSP"** for manual input
 4. Click **"Replace & Apply"**
@@ -52,3 +53,4 @@ Back up your rule set to a JSON file or share rules across devices.
 | Allow WebSocket connections to localhost | Add rule → add `connect-src` → set `ws://localhost:8080` |
 | Disable CSP completely on a dev server | Add rule → switch to raw mode → type `no-csp` |
 | Fix a site broken by too-strict CSP | Auto-detect the site's CSP → remove the blocking directive |
+
