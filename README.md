@@ -1,4 +1,4 @@
-# csp-dsb
+# CSP DSB
 A Chrome browser extension that lets you modify or remove Content-Security-Policy headers on any website. Edit directives or use no-csp to disable CSP entirely.
 
 ---
@@ -54,3 +54,10 @@ Back up your rule set to a JSON file or share rules across devices.
 | Disable CSP completely on a dev server | Add rule → switch to raw mode → type `no-csp` |
 | Fix a site broken by too-strict CSP | Auto-detect the site's CSP → remove the blocking directive |
 
+---
+
+## Source Code
+
+This extension is open source. View the code, report issues, or contribute at:
+
+**[github.com/etMing/csp-dsb](https://github.com/etMing/csp-dsb)**
